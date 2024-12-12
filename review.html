@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read customer reviews for Voyage Air Guitar. Discover why travelers love our portable, high-quality folding guitars. See what our customers are saying about their experience with Voyage Air Guitar.">
+    <meta name="robots" content="index, follow">
+    <title>Customer Reviews | Voyage Air Guitar - Best Folding Travel Guitar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Structured Data Markup for Reviews -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "itemReviewed": {
+            "@type": "Product",
+            "name": "Voyage Air Guitar"
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.8",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "John Doe"
+        },
+        "reviewBody": "This guitar has completely changed the way I travel. It’s lightweight, sounds great, and packs up in seconds!"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="site-title">Voyage Air Guitar</h1>
+            <div class="logo">
+                <img src="images/logo.png" alt="Voyage Air Guitar logo" class="logo-img">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Browse Our Collection</a></li>
+                <li><a href="How It Works.html">How It Works</a></li>
+                <li><a href="review.html" class="active">Customer Reviews</a></li>
+                <li><a href="support.html">Customer Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reviews-summary">
+            <h2>Customer Reviews of Voyage Air Guitar</h2>
+            <h2>Average Rating: 4.8 / 5</h2>
+            <div class="stars">
+                <span>★★★★★</span> <!-- Visual star rating -->
+            </div>
+        </section>
+
+        <section class="featured-reviews">
+            <h3>Featured Reviews</h3>
+            <div class="review-item">
+                <div class="review-content">
+                    <h4>John's Review - 5 Stars</h4>
+                    <p>"This guitar has completely changed the way I travel. It’s lightweight, sounds great, and packs up in seconds!"</p>
+                </div>
+            </div>
+            <div class="review-item">
+                <div class="review-content">
+                    <h4>Sharon's Review - 5 Stars</h4>
+                    <p>"Perfect guitar for road trips. Fits easily in my car, and the sound quality is fantastic!"</p>
+                </div>
+            </div>
+            <div class="review-item">
+                <div class="review-content">
+                    <h4>Emma's Review - 4 Stars</h4>
+                    <p>Fold guitars are useful for travelling. Best for the Travel purpose I enjoyed it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="customer-testimonials">
+            <h3>What Our Customers Are Saying</h3>
+            <div class="testimonial-carousel">
+                <!-- Carousel of testimonials -->
+            </div>
+        </section>
+
+        <section class="submit-review">
+            <h3>Submit Your Review</h3>
+            <form action="/submit-review" method="POST" class="review-form">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+                <label for="review">Name:</label>
+                <textarea id="review" name="review" required></textarea>
+                <label for="email">Email:</label>
+                <textarea id="email" name="email" required></textarea>
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" required></textarea>
+                <label for="image">Upload Image (Optional):</label>
+                <input type="file" id="image" name="image">
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Voyage Air Guitar. All rights reserved.</p>
+    </footer>
+
+    <style>
+        /* Main Content Styles */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: white;
+        } 
+        h2, h3 {
+            font-size: 24px;
+            color: #2c3e50;
+        }
+
+        .reviews-summary {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .stars span {
+            color: #f39c12;
+        }
+
+        .featured-reviews {
+            margin-bottom: 40px;
+        }
+
+        .review-item {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        .review-img img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .review-content {
+            max-width: 800px;
+        }
+
+        .review-content h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .review-content p {
+            font-size: 16px;
+        }
+
+        .submit-review form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit-review label {
+            font-size: 14px;
+        }
+
+        .submit-review select, .submit-review textarea, .submit-review input[type="file"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .submit-review button {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .submit-review button:hover {
+            background-color: #e67e22;
+        }
+
+        .trust-elements img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</body>
+</html>
